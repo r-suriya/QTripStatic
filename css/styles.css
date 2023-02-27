@@ -135,7 +135,6 @@ footer {
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  filter:brightness(0.4);
 }
 
 .card{
@@ -146,6 +145,10 @@ footer {
   height: 50vh;
   object-fit: cover;
   width: 100%;
+}
+
+.card img:hover{
+  filter:brightness(0.4);
 }
 
 /* ================================== */
@@ -161,10 +164,14 @@ footer {
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(0.4);
 }
 .experience-content ul li {
   margin-left: 16px;
@@ -174,7 +181,7 @@ footer {
 @media only screen and (min-width: 768px) {
   /* For desktops phones: */
   #reservation {
-    width: 400px;
+    width: 30vw;
     position: fixed;
   }
 }
